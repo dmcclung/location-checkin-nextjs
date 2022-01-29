@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 593px;
+    height: 243px;
+    align-items: center;
+}
+
+.title {
+    height: 72px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70.3125px;
+    text-align: center;
+}
+
+.description {
+    width: 593px;
+    height: 87px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+}
+
+.primaryButton {
+    width: 220px;
+    height: 44px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    background-color: #53b94e;
+    border-radius: 22px;
+    border: none;
+}
+
+.primaryButton:active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.primaryButtonText {
+    margin: 79px 12px;
+    width: 62px;
+    height: 19px;
+    color: #000000;
+    font-family: SF Pro Text, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+}
+
+.trailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trailDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 421px;
+    height: 365px;
+}
+
+.trailTitle {
+    width: 421px;
+    height: 48px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.875px;
+    text-align: center;
+}
+
+.trailDescription {
+    width: 375px;
+    height: 58px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+}
+
+.trailDistance {
+    width: 123px;
+    height: 29px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+}
+
+.coordinate {
+    width: 272px;
+    height: 29px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+}
+
+.hikingNearMeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 675px;
+    height: 60px;
+}
+
+.hikingNearMeTitle {
+    width: 339px;
+    height: 60px;
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.59375px;
+    text-align: center;
+}
+
+.searchBox {
+    width: 320px;
+    height: 44px;
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+.searchText {
+    margin: 19px 8px;
+    width: 66px;
+    height: 28px;
+    color: #000000;
+    font-family: SF Pro Text, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.currentPositionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.currentPosition {
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 46.875px;
+    text-align: center;
+}
