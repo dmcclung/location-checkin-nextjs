@@ -10,7 +10,7 @@ const Connect: NextPage = () => {
       <Script src="https://kit.fontawesome.com/6061205372.js" crossOrigin='anonymous' />
       <Head>
         <title>Trails Cache</title>
-        <meta name="description" content="Hike and Mint" />
+        <meta name="description" content="Hike and mint" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
@@ -26,13 +26,13 @@ const Connect: NextPage = () => {
         <span className={styles.currentPosition}>
           Current position: 35.221860, -97.454400
         </span>
-        <i className="fas fa-sync-alt fa-2x"></i>
+        <i className="fas fa-sync-alt"></i>
       </div>
       <div className={styles.hikingNearMeContainer}>
         <span className={styles.hikingNearMeTitle}>
           Hiking near me
         </span>
-        <input type="text" className={styles.searchBox} defaultValue="Search" />
+        <input type="text" className={styles.searchBox} placeholder="Search" />
       </div>
       <div className={styles.trailContainer}>
         <div className={styles.trailDescriptionContainer}>
@@ -54,7 +54,7 @@ const Connect: NextPage = () => {
           <button className={styles.primaryButton}>Claim</button>
           <button className={styles.primaryButton}>See Cache</button>
         </div>
-        <Image src="/images/suttonWilderness.jpg" alt="Sutton Wilderness" width="943px" height="426px" priority={true} />
+        <Image src="/images/suttonWilderness.jpg" alt="Sutton Wilderness" width="743px" height="426px" priority={true} />
       </div>
     </div>
   )

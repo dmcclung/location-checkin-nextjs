@@ -58,68 +58,28 @@
     text-align: center;
 }
 
-.trailContainer {
+.currentPositionContainer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 425px;
 }
 
-.trailDescriptionContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 421px;
-    height: 365px;
-}
-
-.trailTitle {
-    width: 421px;
-    height: 48px;
+.currentPosition {
     color: #000000;
     font-family: SF Pro Display, sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 46.875px;
-    text-align: center;
-}
-
-.trailDescription {
-    width: 375px;
-    height: 58px;
-    color: #000000;
-    font-family: SF Pro Display, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.125px;
-    text-align: center;
-}
-
-.trailDistance {
-    width: 123px;
-    height: 29px;
-    color: #000000;
-    font-family: SF Pro Display, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.125px;
-    text-align: center;
-}
-
-.coordinate {
-    width: 272px;
-    height: 29px;
-    color: #000000;
-    font-family: SF Pro Display, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.125px;
     text-align: center;
 }
 
 .hikingNearMeContainer {
     display: flex;
     flex-direction: row;
-    width: 675px;
+    align-items: center;
+    width: 500px;
     height: 60px;
 }
 
@@ -128,7 +88,7 @@
     height: 60px;
     color: #000000;
     font-family: SF Pro Display, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 58.59375px;
     text-align: center;
@@ -141,30 +101,56 @@
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 1px;
     border-radius: 30px;
+    padding-left: 16px;
 }
 
-.searchText {
-    margin: 19px 8px;
-    width: 66px;
-    height: 28px;
-    color: #000000;
-    font-family: SF Pro Text, sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-}
-
-.currentPositionContainer {
+.trailContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
 }
 
-.currentPosition {
+.trailDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 421px;
+    height: 365px;
+}
+
+.trailTitle {
+    width: 421px;
+    height: 48px;
     color: #000000;
     font-family: SF Pro Display, sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 46.875px;
     text-align: center;
+}
+
+.trailDescription, .trailDistance, .coordinate {
+    color: #000000;
+    font-family: SF Pro Display, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+}
+
+.trailDescription {
+    width: 375px;
+    height: 58px;
+}
+
+.trailDistance {
+    width: 150px;
+    height: 29px;
+}
+
+.coordinate {
+    width: 272px;
+    height: 29px;
 }
