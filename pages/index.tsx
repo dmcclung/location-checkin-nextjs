@@ -1,76 +1,63 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Script from 'next/script'
+import styles from '../styles/Connect.module.css'
 
-const Home: NextPage = () => {
+const Connect: NextPage = () => {
   return (
     <div className={styles.container}>
+      <Script src="https://kit.fontawesome.com/6061205372.js" crossOrigin='anonymous' />
       <Head>
         <title>Trails Cache</title>
         <meta name="description" content="Hike and mint" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Read
-          <Link href="/nfts">
-            <a>Next.js!</a>
-          </Link>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+      <div className={styles.main}>
+        <span className={styles.title}>
+          NFTs for trails
+        </span>
+        <span className={styles.description}>
+          Connect your wallet to check in on the trail, share a photo, and get a cool NFT that supports trail construction and maintenance.
+        </span>
+        <button className={styles.primaryButton}>Connect</button>
+      </div>
+      <div className={styles.currentPositionContainer}>
+        <span className={styles.currentPosition}>
+          Current position: 35.221860, -97.454400
+        </span>
+        <i className="fas fa-sync-alt"></i>
+      </div>
+      <div className={styles.hikingNearMeContainer}>
+        <span className={styles.hikingNearMeTitle}>
+          Hiking near me
+        </span>
+        <input type="text" className={styles.searchBox} placeholder="Search" />
+      </div>
+      <div className={styles.trailContainer}>
+        <div className={styles.trailDescriptionContainer}>
+          <span className={styles.trailTitle}>
+            Sutton Wilderness Trail
           </span>
-        </a>
-      </footer>
+          <span className={styles.trailDescription}>
+            This is a beautiful trail within the center of the city.
+          </span>
+          <span className={styles.trailDistance}>
+            5 kms away
+          </span>
+          <span className={styles.coordinate}>
+            Latitude 35.222569 N
+          </span>
+          <span className={styles.coordinate}>
+            Longitude 97.439476 W
+          </span>
+          <button className={styles.primaryButton}>Claim</button>
+          <button className={styles.primaryButton}>See Cache</button>
+        </div>
+        <Image src="/images/suttonWilderness.jpg" alt="Sutton Wilderness" width="743px" height="426px" priority={true} />
+      </div>
     </div>
   )
 }
 
-export default Home
+export default Connect
